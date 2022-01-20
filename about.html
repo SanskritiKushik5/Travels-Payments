@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Bootstrap 5 Template">
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="assets/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Libs CSS -->
+    <link rel="stylesheet" href="assets/libs/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/libs/tiny-slider/dist/tiny-slider.css">
+    <link rel="stylesheet" href="assets/libs/nouislider/dist/nouislider.min.css">
+    <link rel="stylesheet" href="assets/fonts/flat-font-icons/css/flaticon.css">
+    <link rel="stylesheet" href="assets/fonts/fontello-icons/fontello.css">
+    <link rel="stylesheet" href="assets/libs/magnific-popup/dist/magnific-popup.css">
+    <link rel="stylesheet" href="assets/libs/jquery-ui/themes/base/all.css">
+    <link rel="stylesheet" href="assets/libs/jquery-ui/demos/demos.css">
+    <link rel="stylesheet" href="assets/libs/magnific-popup/dist/magnific-popup.css">
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="assets/css/theme.min.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <title>Travel and Payment | About</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <!-- NAVBAR STARTS -->
+
+    <nav class="navbar navbar-expand-lg py-3 navbar-default">
+        <!--<div class="container-fluid px-0">-->
+        <div class="container px-0">
+            <a class="navbar-brand" href="index.html"><img src="assets/images/brand/logo/logo.png"
+                    alt="Travel and Payments" style="width:75%;" /></a>
+
+            <!-- Button -->
+            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbar-default" aria-controls="navbar-default" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="icon-bar top-bar mt-0"></span>
+                <span class="icon-bar middle-bar"></span>
+                <span class="icon-bar bottom-bar"></span>
+            </button>
+            <!-- Collapse -->
+            <div class="collapse navbar-collapse" id="navbar-default">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="travel.html">Travel</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="payments.html">Payments</a>
+                    </li>
+                    <li class="nav-item">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item active">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#footer">Contact</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- NAVBAR ENDS -->
+    <!--ABOUT PAGE HEADER IAMGE SECTION STARTS HERE-->
+    <div class="border-bottom border-top main bg-white">
+        <img class="img-fluid" src="assets/images/header/about_bg.jpg" />
+    </div>
+    <!--ABOUT PAGE HEADER IAMGE SECTION ENDS HERE-->
+    <div class="border-bottom border-top py-5 bg-white">
+        <div class="container">
+            <div class="row">
+                <!--ABOUT PAGE LEFT SECTION STARTS HERE-->
+                <div class="col-md-4 col-sm-12">
+                    <div class="card bg-grey">
+                        <div class="card-body">
+                            <h5 class="section-title" style="padding-top:12%;padding-left:8%;">ABOUT</h5>
+                            <p class="py-2 summary" style="padding-left:8%;padding-right:8%;">There's something unique
+                                about the intersection of Travel & Payments sectors (or services). Both are growing
+                                faster than any other and unless another COVID strikes, remain evergreen businesses. The
+                                space of Travel & Payments is a union of everything related to Travel & Payments
+                                explaining in lay-Sapiens terms, the nuances of each.</p>
+                            <p class="py-2 summary" style="padding-left:8%;padding-right:8%;">The goal of Travel &
+                                Payments is to democratize the Payments knowledge while sharing travel stories to unique
+                                places of the world (or the solar system once it becomes affordable)</p>
+                        </div>
+                    </div>
+                </div>
+                <!--ABOUT PAGE LEFT SECTION ENDS HERE-->
+                <!--ABOUT PAGE RIGHT SECTION STARTS HERE-->
+                <?php
+						$useragent=$_SERVER['HTTP_USER_AGENT'];
+						if(preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|midp|mmp|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows (ce|phone)|xda|xiino/i',$useragent)||preg_match('/1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\-|your|zeto|zte\-/i',substr($useragent,0,4))){
+					?>
+                <div class="col-md-8 col-sm-12 py-4">
+                    <?php
+						}
+						else{
+					?>
+                    <div class="col-md-8 col-sm-12">
+                        <?php
+						}
+					?>
+
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="section-title" style="padding-top:5%;padding-left:6%;">VISHAL MEHTA <a
+                                        href="https://www.linkedin.com/in/vishalbmehta/" target="_blank"><small><i
+                                                style="color:#0072B1;" class="fab fa-linkedin"></i></small></a></h5>
+                                <p class="py-2 summary" style="padding-left:6%;padding-right:6%;">The founder of this
+                                    Travel & Payments space, Vishal Mehta, has spent majority of his career in the
+                                    Payments industry, even before the fintech term became omnipresent. All this, while
+                                    traveling to 49 Countries across all 7 continents of the world. He has worked for
+                                    Playspan (acquired by VISA) & Emergent Payments on the Payment Service Provider end
+                                    followed by an intense traveling role at Expedia & now at Microsoft, managing all
+                                    partnerships with external payments providers. Vishal is also the chair person of
+                                    the merchant payments' industry body - Merchant Advisory Group (MAG)'s APAC chapter.
+                                </p>
+                                <p class="py-2 summary" style="padding-left:6%;padding-right:6%;">Vishal aims to share
+                                    his travel stories across the 7 continents and help refine customized itineraries
+                                    for those who don't have time to do it themselves. Vishal also strongly believes in
+                                    democratization of Payments knowledge for the merchants and aims to make life easier
+                                    for them. by making Payments, usually the biggest cost head after Infrastructure &
+                                    Salaries for consumer companies, one less thing to worry about.</p>
+                                <p class="py-2 summary" style="padding-left:6%;padding-right:6%;">He can be reached at
+                                    <b><a
+                                            href="mailto:vishal@travelandpayments.com">vishal@travelandpayments.com</a></b>
+                                </p>
+                                <p class="py-2 summary"></p>
+                                <p class="summary" style="padding-bottom:1.5px;"></p>
+                                <!--<p class="summary" style="padding-bottom:1.5px;"></p>-->
+                            </div>
+                        </div>
+                    </div>
+                    <!--ABOUT PAGE RIGHT SECTION ENDS HERE-->
+                </div>
+            </div>
+        </div>
+        <!-- FOOTER STARTS -->
+        <div id="footer" class="footer-dark py-6 text-form">
+            <div class="container">
+                <div class="row">
+                    <!--mycontent class is for vertical dotted line-->
+                    <!--<div class="col-md-7 col-sm-12 col-12 mycontent">-->
+                    <!--mycontent class is for vertical dotted line-->
+                    <!--<div class="col-md-7 col-sm-12 col-12 mycontent">-->
+                    <!--CONTACT FORM SECTION OF THE FOOTER STARTS HERE-->
+                    <div class="col-md-7 col-sm-12 col-12">
+                        <div class="col-md-12 col-12">
+                            <h3 class="footer-title mb-2">CONTACT</h3>
+                        </div>
+                        <div class="row" style="padding-right:5%;">
+                            <div class="py-2 col-md-6 col-sm-12 col-12">
+                                <div class="form-group">
+                                    <label class="footer-label">Name</label>
+                                    <input type="text" id="txtName" name="txtName" class="form-control" />
+                                </div>
+                            </div>
+                            <div class="py-2 col-md-6 col-sm-12 col-12">
+                                <div class="form-group">
+                                    <label class="footer-label">Email</label>
+                                    <input type="text" id="txtEmail" name="txtEmail" class="form-control" />
+                                </div>
+                            </div>
+                            <div class="py-2 col-md-12 col-sm-12 col-12">
+                                <div class="form-group">
+                                    <label class="footer-label">Message</label>
+                                    <textarea id="txtMessage" name="txtMessage" class="form-control"></textarea>
+                                </div>
+                            </div>
+                            <div class="py-2 col-md-6 col-6 py-2">
+                                <div class="form-group">
+                                    <button id="btnSubmitContact"
+                                        style="opacity:70%;width:167px;letter-spacing:2px;line-height:10px;background:#565656 !important;font-family: 'Montserrat', sans-serif;"
+                                        class="btn text-white">SEND</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--CONTACT FORM SECTION OF THE FOOTER ENDS HERE-->
+                    <!--NEWSLETTER FORM SECTION OF THE FOOTER STARTS HERE-->
+                    <div class="col-md-5 col-sm-12 col-12 py-6">
+                        <div class="col-md-5 col-sm-12 col-12" style="padding-left:5%;">
+                            <div class="col-md-12 col-12">
+                                <!-- section title start-->
+                                <h3 class="footer-title text-dark mb-2">SIGN UP FOR NEWSLETTER</h3>
+                                <!-- /.section title start-->
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12 col-12">
+                                    <div class="form-group">
+                                        <label class="footer-label">Email</label>
+                                        <input type="text" id="txtNewsLetterSignup" class="form-control" />
+                                    </div>
+                                </div>
+                                <div class="py-4 col-md-12 col-12">
+                                    <button id="btnSignUpNewsLetter"
+                                        style="opacity:70%;width:167px;letter-spacing:2px;line-height:10px;background:#565656 !important;font-family: 'Montserrat', sans-serif;"
+                                        class="btn text-white">REGISTER</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!--NEWSLETTER FORM SECTION OF THE FOOTER ENDS HERE-->
+                    </div>
+                </div>
+            </div>
+            <div class="footer bg-dark">
+                <!-- footer -->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 text-left">
+                            <p class="fs-6 text-white" style="margin:10px !important;">
+                                <a style="color:#FFFFFF;" href="https://www.thewiseidiot.in/" target="_blank">
+                                    <?php //echo date('Y'); ?> Designed &amp; Developed by The Wise Idiot
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- FOOTER ENDS -->
+            <!-- Libs JS -->
+            <script src="assets/libs/jquery/dist/jquery.min.js"></script>
+            <script src="assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+            <script src="assets/libs/tiny-slider/dist/min/tiny-slider.js"></script>
+            <script src="assets/libs/nouislider/dist/nouislider.min.js"></script>
+            <script src="assets/libs/wnumb/wNumb.min.js"></script>
+            <script src="assets/libs/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+            <script src="assets/libs/isotope-layout/dist/isotope.pkgd.min.js"></script>
+            <script src="assets/libs/imagesloaded/imagesloaded.pkgd.min.js"></script>
+            <script src="assets/libs/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+            <script src="assets/libs/prismjs/prism.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.12/clipboard.min.js"></script>
+            <!-- Theme JS -->
+            <script src="assets/js/theme.min.js"></script>
+            <script src="assets/js/custom.js"></script>
+</body>
+
+</html>
