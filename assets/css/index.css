@@ -1,0 +1,217 @@
+
+	.img-container{
+		position:relative;
+		display:inline-block;
+	}
+	
+	.img-container img{
+		display:block
+	}
+	
+	.img-container .overlay{
+		position:absolute;
+		top:0;
+		left:0;
+		width:100%;
+		height:100%;
+		background:transparent;
+		opacity:1;
+		transition:opacity 500ms ease-in-out;
+	}
+	
+	.overlay span{
+		
+		position:absolute;
+		color:#fff;
+		font-weight:400;
+	}
+	
+	.paginator{
+		position: absolute !important;
+		float: right !important;
+	}
+		
+	/*li{
+		margin-top: 20px !important;
+		position: relative !important;
+		float: left !important;
+		margin-right: 20px !important;
+	}*/
+
+	/* &.prev{
+	  display: block !important;
+	  height: 20px !important;
+	  width: 20px !important;
+	}
+
+	&.next{
+	  display: block !important;
+	  height: 20px !important;
+	  width: 20px !important;
+	} */
+	
+	.caption-span{
+		text-align:left;
+		font-family: 'Montserrat', sans-serif;
+		text-transform:uppercase;
+		bottom:55%;
+		font-size:24px;
+		font-weight:700;
+	}
+	
+	.caption-text{
+		background:rgba(23, 23, 23, 0.45);
+			width:100%;
+			padding:2px;
+			bottom:0%;
+			text-align:justify;
+			font-size:20px;
+			font-family:'Open Sans';
+		}
+	
+	 @media only screen and (max-width: 600px) {
+		 .caption-span{
+			text-align:left;
+			bottom:15%;
+			font-size:16px;
+			font-weight:700;
+		}
+		
+		.caption-text{
+			background:rgba(23, 23, 23, 0.45);
+			width:100%;
+			padding:5px !important;
+			bottom:0%;
+			text-align:justify;
+			font-size:12px;
+			font-family:'Open Sans';
+		}
+	 }
+	 
+	 .bg-image {
+		background-image:url(https://via.placeholder.com/1340x839);
+		background-position: center center;
+		  background-repeat: no-repeat;
+		  background-size: cover;
+	}
+	
+	.slide {
+    height: 100%;
+    @extend .background-cover;
+    /* &--1{
+        background-image: url(http://placehold.it/1340x839&text=1);
+    }
+    &--2{
+        background-image: url(http://placehold.it/1340x839&text=2);
+    }
+    &--3{
+        background-image: url(http://placehold.it/1340x839&text=3);
+    }
+	&--4{
+        background-image: url(http://placehold.it/1340x839&text=3);
+    }
+	&--5{
+        background-image: url(http://placehold.it/1340x839&text=3);
+    }
+	&--6{
+        background-image: url(http://placehold.it/1340x839&text=3);
+    } */
+}
+
+
+.hero-slider{
+	
+	max-width: 100vw;
+	margin-top: 90px;
+	overflow-x: hidden;
+}
+
+.hero-slider .slick-next{
+	z-index: 2;
+	right: 30px;
+	width: 30px;
+	height: 30px;
+}
+
+.hero-slider .slick-next::before,
+.hero-slider .slick-prev::before{
+	font-size: 30px;
+}
+
+.hero-slider .slick-prev{
+	z-index: 2;
+	left: 30px;
+	width: 30px;
+	height: 30px;
+}
+
+.hero-slider .slide{
+	width: 100%;
+	color: #FFF;
+	margin: 0 auto;
+	position: relative;
+	height: calc(100vh - 90px);
+}
+
+.hero-slider .slide img{
+	width: 100%;
+	height: 100%;
+	max-width: 100%;
+	object-fit: cover;
+}
+
+
+.hero-slider .slide::before{
+	top: 0;
+	left: 0;
+	content: '';
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+	display: block;
+	position: absolute;
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+.slide-content{
+	left: 0;
+	bottom: 0;
+	z-index: 2;
+	width: 100%;
+	color: #FFF;
+	padding: 15px 10%;
+	position: absolute;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+.slide-content h5{
+	color: #FFF;
+	font-size: 26px;
+	text-transform: uppercase;
+	font-family: 'Montserrat', sans-serif;
+}
+
+@media(max-width:767px){
+	.hero-slider{
+		margin-top: 90px;
+	}
+
+	.slide-content {
+		padding: 15px;
+	}
+	.slide-content h5{
+		font-size: 18px;
+	}
+
+	.hero-slider .slick-next{
+		right: 15px;
+	}
+
+	.hero-slider .slick-prev{
+		left: 15px;
+	}
+
+	.slide-content p{
+		margin-bottom: 0;
+	}
+}
